@@ -16,7 +16,17 @@ Notice that we can express the ith element of `number_of_microstates` as:
 
 where ![](https://render.githubusercontent.com/render/math?math=E_i) is the ith element of energies.  When the formula for the elements of `number_of_microstates` is written this way it is tempting to think that we need to write 5 if statements that check the value of each energy against the five values in the list called energies. We do not need to do this, however, as the 5 values in energies are evenly spaced.  This fact ensures that there is a formula that maps the values of the energy on to the corresponding index of `number_of_microstates` that we should add one to:
 
-![](https://render.githubusercontent.com/render/math?math=-8\rightarrow\0\qquad-4\rightarrow\1\qquad0\rightarrow\2\qquad4\rightarrow\3\qquad\8\rightarrow\4)
+$$
+-8\rightarrow 0\qquad 
+-6\rightarrow 1 \qquad 
+-4\rightarrow 2 \qquad 
+-2\rightarrow 3 \qquad 
+0\rightarrow 4 \qquad 
+2\rightarrow 5\qquad 
+4\rightarrow 6 \qquad 
+6 \rightarrow 7 \qquad
+8\rightarrow 8
+$$
 
 Once you have worked out the formula to use to convert the energies on the left of the arrows above above to the indices on the right you will need to convert the real number that is output to an integer by using the Python command:
 
